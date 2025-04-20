@@ -64,7 +64,6 @@ public class AccountsPage {
 			return new SearchPage(driver);
 		}else {
 			System.out.println("Search field not present on the page...");
-			System.out.println("Test");
 			return null;
 		}
 	}
