@@ -9,13 +9,13 @@
 <listener class-name = "com.opencart.listeners.AnnotationTransformer"/>
 </listeners>
 
-	<test name="Login Page Test_Chrome">
+	<test name="Login Page Test">
 	<parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	 <test name="Account Page Test_Firefox">
+	 <test name="Account Page Test">
 	 <parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.opencart.tests.AccountPageTest" />
