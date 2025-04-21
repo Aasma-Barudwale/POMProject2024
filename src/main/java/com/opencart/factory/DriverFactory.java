@@ -58,15 +58,14 @@ public class DriverFactory {
 				}else {
 					tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 				}
-		}else if(browserName.equalsIgnoreCase("firefox")) {
-			if(Boolean.parseBoolean(prop.getProperty("remote")))
-			{
-				init_remoteDriver("firefox");
-			}else {
-				tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
-			}
-			
-		}else {
+		}/*
+				 * else if(browserName.equalsIgnoreCase("firefox")) {
+				 * if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				 * init_remoteDriver("firefox"); }else { tlDriver.set(new
+				 * FirefoxDriver(optionsManager.getFirefoxOptions())); }
+				 * 
+				 * }
+				 */else {
 			System.out.println("Please pass right browser name..." + browserName);
 		}
 		
